@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^register/?$ register.php
+
+RewriteRule ^forgotpassword/?$ forgot.php
+
+RewriteRule ^activate/([0-9a-zA-Z-\s]+)/?$ activate1.php?idi=$1 [QSA,L]
+
+
